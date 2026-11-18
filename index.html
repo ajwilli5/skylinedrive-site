@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline Drive</title>
+<meta name="description" content="Skyline Drive, LLC builds apps and digital products.">
+<style>
+  :root {
+    --ground: #1C2633;
+    --ridge: #4A6782;
+    --ridge-dark: #2A3A4E;
+    --sun: #F2A541;
+    --road: #EDE6D8;
+    --muted: #B8C2CF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--ground);
+    color: var(--road);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 16px;
+    gap: 20px;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(32px, 7vw, 56px);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .rule { width: 64px; height: 3px; background: var(--sun); }
+  .tagline { margin: 0; font-size: 18px; color: var(--muted); }
+  nav { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+  a { color: var(--sun); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { text-align: center; padding: 24px 16px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <svg width="150" height="150" viewBox="0 0 120 120" role="img" aria-label="Skyline Drive logo: a winding road leading to a mountain skyline with the sun rising behind it">
+    <circle cx="60" cy="50" r="15" fill="#F2A541"></circle>
+    <path d="M6 72 L30 46 L44 58 L64 30 L84 54 L98 42 L114 72 Z" fill="#4A6782"></path>
+    <path d="M6 72 L22 62 L36 70 L52 58 L70 68 L88 58 L114 72 Z" fill="#2A3A4E"></path>
+    <path d="M40 114 C48 100 78 96 70 84 C66 78 57 77 59 72 L61 72 C61 76 71 78 75 84 C84 98 58 102 78 114 Z" fill="#EDE6D8"></path>
+    <path d="M59 113 C64 102 76 96 70 86 C67 80 60 78 60 73" fill="none" stroke="#1C2633" stroke-width="1.6" stroke-dasharray="4 3" stroke-linecap="round"></path>
+  </svg>
+  <h1>Skyline Drive</h1>
+  <div class="rule"></div>
+  <p class="tagline">Apps and digital products.</p>
+  <nav>
+    <a href="mailto:support@skylinedrive.studio">support@skylinedrive.studio</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+</main>
+<footer>&copy; 2026 Skyline Drive, LLC</footer>
+</body>
+</html>
