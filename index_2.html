@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline Drive</title>
+<meta name="description" content="Skyline Drive LLC is an independent software company in Michigan that builds and publishes apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #EDE6D8;
+    --ink-soft: #B8C2CF;
+    --line: #2E3B4C;
+    --bg: #1C2633;
+    --bg-alt: #212D3C;
+    --ridge: #9DB4CA;
+    --amber: #F2A541;
+    --amber-bright: #F2A541;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  a { color: var(--amber); }
+  a:hover { color: var(--ink); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header { border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; flex-wrap: wrap; padding: 12px 0; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+  .brand span { font-family: "Archivo", sans-serif; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 17px; }
+  nav { display: flex; gap: 28px; flex-wrap: wrap; }
+  nav a { color: var(--ink-soft); text-decoration: none; font-weight: 600; font-size: 16px; }
+  nav a:hover { color: var(--ink); }
+
+  /* Hero */
+  .hero { padding: 96px 0 88px; }
+  .eyebrow { font-family: "Archivo", sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ridge); margin: 0 0 16px; }
+  h1 { font-family: "Archivo", sans-serif; font-weight: 700; font-size: clamp(36px, 5.5vw, 58px); line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 24px; max-width: 760px; }
+  .lede { font-size: 21px; color: var(--ink-soft); max-width: 640px; margin: 0; }
+
+  /* Sections */
+  section.block { padding: 80px 0; border-top: 1px solid var(--line); }
+  section.alt { background: var(--bg-alt); }
+  h2 { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 28px; margin: 0 0 12px; }
+  .section-intro { color: var(--ink-soft); max-width: 640px; margin: 0 0 40px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .card { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 28px; }
+  .card h3 { font-family: "Archivo", sans-serif; font-size: 19px; margin: 0 0 8px; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: 17px; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ridge); background: #2A3A4E; border-radius: 999px; padding: 4px 12px; margin-bottom: 16px; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  @media (max-width: 760px) { .two { grid-template-columns: 1fr; gap: 24px; } .hero { padding: 64px 0 56px; } }
+
+  .contact-line { font-size: 20px; margin: 0; }
+
+  /* Footer */
+  footer { border-top: 1px solid var(--line); padding: 32px 0; color: var(--ink-soft); font-size: 15px; }
+  .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .foot a { color: var(--ink-soft); }
+  .foot a:hover { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Skyline Drive home">
+      <svg width="36" height="36" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="50" r="15" fill="#F2A541"></circle>
+        <path d="M6 72 L30 46 L44 58 L64 30 L84 54 L98 42 L114 72 Z" fill="#4A6782"></path>
+        <path d="M6 72 L22 62 L36 70 L52 58 L70 68 L88 58 L114 72 Z" fill="#2A3A4E"></path>
+        <path d="M40 114 C48 100 78 96 70 84 C66 78 57 77 59 72 L61 72 C61 76 71 78 75 84 C84 98 58 102 78 114 Z" fill="#EDE6D8"></path>
+        <path d="M59 113 C64 102 76 96 70 86 C67 80 60 78 60 73" fill="none" stroke="#1C2633" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round"></path>
+      </svg>
+      <span>Skyline Drive</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#apps">Apps</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Independent software company</p>
+      <h1>We build apps.</h1>
+      <p class="lede">Skyline Drive designs, develops, and publishes apps: focused, well-made tools for the things people care about.</p>
+    </div>
+  </section>
+
+  <section class="block alt" id="apps">
+    <div class="wrap">
+      <h2>Apps</h2>
+      <p class="section-intro">Our first releases are in development. Each app will be listed here with a link to its App Store page and its own privacy policy.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="tag">In development</span>
+          <h3>Coming to the App Store</h3>
+          <p>Our first apps are being built now and will be published on the App Store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap two">
+      <h2>About</h2>
+      <div>
+        <p style="margin-top:0">Skyline Drive LLC is an independent software company based in Michigan. We design, build, and publish mobile apps.</p>
+        <p>Every company starts somewhere. Ours started on a quiet street called Skyline Drive, where a kid spent long afternoons wondering what lay past the horizon.</p>
+        <p>The horizon got closer. Years of travel and a lot of hard-earned lessons later, the ideas that started there are becoming things you can hold in your hand.</p>
+        <p style="margin-bottom:0">The name keeps us grounded in where we began, and it keeps us looking up: toward the next ridge, the next idea, the next thing worth building.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="contact">
+    <div class="wrap two">
+      <h2>Contact</h2>
+      <div>
+        <p style="margin-top:0">For support, questions, or business inquiries:</p>
+        <p class="contact-line"><a href="mailto:support@skylinedrive.studio">support@skylinedrive.studio</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>&copy; 2026 Skyline Drive LLC &middot; Michigan</span>
+    <span><a href="privacy.html">Privacy Policy</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
